@@ -28,7 +28,7 @@ function Contact() {
   if (!name || !email || !message) return;
 
   const data = {
-    access_key: "PASTE_YOUR_ACCESS_KEY_HERE",
+    access_key: "0ab396ce-722f-4547-b612-08f1538e0c8e",
     name: name,
     email: email,
     message: message,
