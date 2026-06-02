@@ -14,15 +14,15 @@ margin-right: 5px;
 margin: 20px 0;
 }
 
-.contact-info p,
 .email-text {
-margin: 8px 0;
 font-size: 1rem;
-color: #000 !important;
 font-weight: 500;
 }
 
-.dark-mode .contact-info p,
+.light-mode .email-text {
+color: #000 !important;
+}
+
 .dark-mode .email-text {
 color: #fff !important;
 }
@@ -40,7 +40,7 @@ flex-wrap: wrap;
 font-weight: 600;
 }
 
-/* Contact Form */
+/* Form */
 
 .contact-form {
 padding-top: 20px;
@@ -57,95 +57,6 @@ background-color: #5000ca;
 color: white;
 }
 
-.contact-form fieldset {
-border-radius: 5px;
-}
-
-/* Labels */
-
-.MuiInputLabel-root {
-color: #555 !important;
-}
-
-.dark-mode .MuiInputLabel-root {
-color: #fff !important;
-}
-
-/* Input Text */
-
-input,
-textarea {
-color: #000 !important;
--webkit-text-fill-color: #000 !important;
-}
-
-.dark-mode input,
-.dark-mode textarea {
-color: #fff !important;
--webkit-text-fill-color: #fff !important;
-}
-
-/* Material UI Input Text */
-
-.MuiInputBase-input {
-color: #000 !important;
--webkit-text-fill-color: #000 !important;
-}
-
-.dark-mode .MuiInputBase-input {
-color: #fff !important;
--webkit-text-fill-color: #fff !important;
-}
-
-/* Text Area */
-
-.MuiInputBase-inputMultiline {
-color: #000 !important;
--webkit-text-fill-color: #000 !important;
-}
-
-.dark-mode .MuiInputBase-inputMultiline {
-color: #fff !important;
--webkit-text-fill-color: #fff !important;
-}
-
-/* Placeholder */
-
-::placeholder {
-color: #777 !important;
-}
-
-.dark-mode ::placeholder {
-color: #bbb !important;
-}
-
-/* Input Background */
-
-.MuiOutlinedInput-root {
-background: #fff !important;
-}
-
-.dark-mode .MuiOutlinedInput-root {
-background: rgba(255, 255, 255, 0.08) !important;
-}
-
-/* Borders */
-
-.dark-mode .MuiOutlinedInput-root fieldset {
-border-color: #fff !important;
-}
-
-.dark-mode .Mui-focused fieldset {
-border-color: #5000ca !important;
-}
-
-/* Layout */
-
-label {
-font-size: 1.2rem;
-font-family: "DomaineDispNar-Medium", sans-serif;
-}
-
 .form-flex {
 display: flex;
 gap: 15px;
@@ -156,13 +67,64 @@ padding-bottom: 15px;
 width: 100%;
 }
 
-form {
-width: 100% !important;
-}
-
 .body-form {
 width: 100% !important;
 margin-bottom: 15px !important;
+}
+
+/* Material UI Inputs */
+
+.MuiOutlinedInput-root {
+border-radius: 8px;
+}
+
+.light-mode .MuiOutlinedInput-root {
+background: #ffffff !important;
+}
+
+.dark-mode .MuiOutlinedInput-root {
+background: rgba(255, 255, 255, 0.08) !important;
+}
+
+/* Input Text */
+
+.light-mode .MuiInputBase-input {
+color: #000 !important;
+-webkit-text-fill-color: #000 !important;
+}
+
+.dark-mode .MuiInputBase-input {
+color: #fff !important;
+-webkit-text-fill-color: #fff !important;
+}
+
+/* Labels */
+
+.light-mode .MuiInputLabel-root {
+color: #555 !important;
+}
+
+.dark-mode .MuiInputLabel-root {
+color: #fff !important;
+}
+
+/* Borders */
+
+.dark-mode .MuiOutlinedInput-root fieldset {
+border-color: #fff !important;
+}
+
+.light-mode .MuiOutlinedInput-root fieldset {
+border-color: #ccc !important;
+}
+
+/* Success / Error Message */
+
+.form-status {
+clear: both;
+margin-top: 20px;
+font-weight: bold;
+font-size: 1rem;
 }
 
 /* Mobile */
@@ -174,14 +136,13 @@ flex-direction: column;
 
 .resume-buttons {
 flex-direction: column;
-width: 100%;
 }
 
 .resume-buttons button {
 width: 100%;
 }
 
-.contact-info p {
+.contact-info {
 font-size: 0.95rem;
 }
 }
