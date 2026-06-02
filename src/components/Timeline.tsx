@@ -121,7 +121,7 @@ function Timeline() {
             <h3>Hackathon Finalist</h3>
             <p>
               Top 4 Team in Smart Attendance System Hackathon using
-              Face Recognition and AI-powered Attendance Monitoring.
+              Face Recognition and AI-powered Attendance Monitoring in MCA.
             </p>
           </VerticalTimelineElement>
 
