@@ -16,8 +16,12 @@
   p {
     margin: 8px 0;
     font-size: 1rem;
-    color: #fff;
+    color: #000;
   }
+}
+
+.dark-mode .contact-info p {
+  color: #fff;
 }
 
 /* Resume Buttons */
@@ -53,6 +57,56 @@
     background-color: white;
     border-radius: 5px;
   }
+}
+
+/* Input Labels */
+
+.MuiInputLabel-root {
+  color: #666 !important;
+}
+
+.dark-mode .MuiInputLabel-root {
+  color: #fff !important;
+}
+
+/* Input Text */
+
+.MuiInputBase-input {
+  color: #000 !important;
+}
+
+.dark-mode .MuiInputBase-input {
+  color: #fff !important;
+}
+
+/* TextArea Text */
+
+.MuiOutlinedInput-input,
+.MuiInputBase-inputMultiline {
+  color: #000 !important;
+}
+
+.dark-mode .MuiOutlinedInput-input,
+.dark-mode .MuiInputBase-inputMultiline {
+  color: #fff !important;
+}
+
+/* Dark Mode Borders */
+
+.dark-mode .MuiOutlinedInput-root fieldset {
+  border-color: #fff !important;
+}
+
+/* Dark Mode TextBox Background */
+
+.dark-mode .MuiOutlinedInput-root {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Light Mode TextBox Background */
+
+.MuiOutlinedInput-root {
+  background-color: #fff;
 }
 
 label {
