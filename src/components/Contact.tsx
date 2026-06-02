@@ -53,15 +53,6 @@ function Contact() {
 
           <div className="resume-buttons">
             <Button
-              variant="contained"
-              startIcon={<DownloadIcon />}
-              href="/resume/Harsha_AI_Engineer_Resume.pdf"
-              target="_blank"
-            >
-              View Resume
-            </Button>
-
-            <Button
               variant="outlined"
               startIcon={<DownloadIcon />}
               href="/resume/Harsha_AI_Engineer_Resume.pdf"
