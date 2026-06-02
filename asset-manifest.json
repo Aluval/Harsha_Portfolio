@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/Harsha24/static/css/main.1e4f6436.css",
-    "main.js": "/Harsha24/static/js/main.4ac6a6a0.js",
-    "static/js/453.b05d8aa5.chunk.js": "/Harsha24/static/js/453.b05d8aa5.chunk.js",
-    "static/media/datasci_logo.png": "/Harsha24/static/media/datasci_logo.62800460d784d6c39884.png",
-    "static/media/QRVoiceEducation.jpeg": "/Harsha24/static/media/QRVoiceEducation.a6444a2dfe541d10ec7b.jpeg",
-    "static/media/EmoFace_AI.jpeg": "/Harsha24/static/media/EmoFace_AI.dc8219f7bb89077230ac.jpeg",
-    "static/media/SmartLockTOTP.jpeg": "/Harsha24/static/media/SmartLockTOTP.008233c99281057f7554.jpeg",
-    "static/media/VisuNav_AI.jpeg": "/Harsha24/static/media/VisuNav_AI.a707c43df41e8ef6e59f.jpeg",
-    "static/media/BlinkVerfiy_AI.jpeg": "/Harsha24/static/media/BlinkVerfiy_AI.40a0ff75e73d21ab6ad4.jpeg",
-    "static/media/QROTPVoiceHouse.jpeg": "/Harsha24/static/media/QROTPVoiceHouse.cece68852e9c26f97f7f.jpeg",
-    "static/media/bg-light.png": "/Harsha24/static/media/bg-light.bac0efb485244a522981.png",
-    "static/media/bg-dark.png": "/Harsha24/static/media/bg-dark.f420c6b8458af72de935.png",
-    "static/media/AI_Fan.jpeg": "/Harsha24/static/media/AI_Fan.9982c656458749d3b2e5.jpeg",
-    "static/media/Harsha.jpeg": "/Harsha24/static/media/Harsha.db1c599214fd7bd87acc.jpeg",
-    "index.html": "/Harsha24/index.html",
-    "main.1e4f6436.css.map": "/Harsha24/static/css/main.1e4f6436.css.map",
-    "main.4ac6a6a0.js.map": "/Harsha24/static/js/main.4ac6a6a0.js.map",
-    "453.b05d8aa5.chunk.js.map": "/Harsha24/static/js/453.b05d8aa5.chunk.js.map"
+    "main.css": "/static/css/main.d9ef2ae6.css",
+    "main.js": "/static/js/main.390daf1b.js",
+    "static/js/453.b05d8aa5.chunk.js": "/static/js/453.b05d8aa5.chunk.js",
+    "static/media/datasci_logo.png": "/static/media/datasci_logo.62800460d784d6c39884.png",
+    "static/media/QRVoiceEducation.jpeg": "/static/media/QRVoiceEducation.a6444a2dfe541d10ec7b.jpeg",
+    "static/media/EmoFace_AI.jpeg": "/static/media/EmoFace_AI.dc8219f7bb89077230ac.jpeg",
+    "static/media/SmartLockTOTP.jpeg": "/static/media/SmartLockTOTP.008233c99281057f7554.jpeg",
+    "static/media/VisuNav_AI.jpeg": "/static/media/VisuNav_AI.a707c43df41e8ef6e59f.jpeg",
+    "static/media/BlinkVerfiy_AI.jpeg": "/static/media/BlinkVerfiy_AI.40a0ff75e73d21ab6ad4.jpeg",
+    "static/media/QROTPVoiceHouse.jpeg": "/static/media/QROTPVoiceHouse.cece68852e9c26f97f7f.jpeg",
+    "static/media/bg-light.png": "/static/media/bg-light.bac0efb485244a522981.png",
+    "static/media/bg-dark.png": "/static/media/bg-dark.f420c6b8458af72de935.png",
+    "static/media/AI_Fan.jpeg": "/static/media/AI_Fan.9982c656458749d3b2e5.jpeg",
+    "static/media/Harsha.jpeg": "/static/media/Harsha.db1c599214fd7bd87acc.jpeg",
+    "index.html": "/index.html",
+    "main.d9ef2ae6.css.map": "/static/css/main.d9ef2ae6.css.map",
+    "main.390daf1b.js.map": "/static/js/main.390daf1b.js.map",
+    "453.b05d8aa5.chunk.js.map": "/static/js/453.b05d8aa5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1e4f6436.css",
-    "static/js/main.4ac6a6a0.js"
+    "static/css/main.d9ef2ae6.css",
+    "static/js/main.390daf1b.js"
   ]
 }
