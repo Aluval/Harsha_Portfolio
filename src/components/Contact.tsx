@@ -18,21 +18,44 @@ function Contact() {
 
   const form = useRef(null);
 
-  const sendEmail = (e: any) => {
-    e.preventDefault();
+  const sendEmail = async (e: any) => {
+  e.preventDefault();
 
-    setNameError(name === "");
-    setEmailError(email === "");
-    setMessageError(message === "");
+  setNameError(name === "");
+  setEmailError(email === "");
+  setMessageError(message === "");
 
-    if (name && email && message) {
-      alert("Message Submitted Successfully!");
+  if (!name || !email || !message) return;
 
-      setName("");
-      setEmail("");
-      setMessage("");
-    }
+  const data = {
+    access_key: "PASTE_YOUR_ACCESS_KEY_HERE",
+    name: name,
+    email: email,
+    message: message,
+    subject: "New Portfolio Contact Message",
   };
+
+  const response = await fetch("https://api.web3forms.com/submit", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Accept: "application/json",
+    },
+    body: JSON.stringify(data),
+  });
+
+  const result = await response.json();
+
+  if (result.success) {
+    alert("Message Sent Successfully!");
+
+    setName("");
+    setEmail("");
+    setMessage("");
+  } else {
+    alert("Failed to send message.");
+  }
+};
 
   return (
     <div id="contact">
