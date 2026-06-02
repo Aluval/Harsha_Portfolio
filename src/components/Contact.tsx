@@ -55,7 +55,7 @@ function Contact() {
             <Button
               variant="outlined"
               startIcon={<DownloadIcon />}
-              href="/resume/Harsha_AI_Engineer_Resume.pdf"
+              href={`${process.env.PUBLIC_URL}/resume/Harsha_AI_Engineer_Resume.pdf`}
               download
             >
               Download Resume
