@@ -12,16 +12,16 @@
 
 .contact-info {
   margin: 20px 0;
+}
 
-  p {
-    margin: 8px 0;
-    font-size: 1rem;
-    color: #000;
-  }
+.contact-info p {
+  margin: 8px 0;
+  font-size: 1rem;
+  color: #000 !important;
 }
 
 .dark-mode .contact-info p {
-  color: #fff;
+  color: #fff !important;
 }
 
 /* Resume Buttons */
@@ -41,28 +41,27 @@
 
 .contact-form {
   padding-top: 20px;
-
-  button {
-    float: right;
-    background-color: white;
-    color: #050f0b;
-  }
-
-  button:hover {
-    background-color: #5000ca;
-    color: white;
-  }
-
-  fieldset {
-    background-color: white;
-    border-radius: 5px;
-  }
 }
 
-/* Input Labels */
+.contact-form button {
+  float: right;
+  background-color: white;
+  color: #050f0b;
+}
+
+.contact-form button:hover {
+  background-color: #5000ca;
+  color: white;
+}
+
+.contact-form fieldset {
+  border-radius: 5px;
+}
+
+/* Labels */
 
 .MuiInputLabel-root {
-  color: #666 !important;
+  color: #555 !important;
 }
 
 .dark-mode .MuiInputLabel-root {
@@ -71,43 +70,75 @@
 
 /* Input Text */
 
+input,
+textarea {
+  color: #000 !important;
+  -webkit-text-fill-color: #000 !important;
+}
+
+.dark-mode input,
+.dark-mode textarea {
+  color: #fff !important;
+  -webkit-text-fill-color: #fff !important;
+}
+
+/* Material UI Input Text */
+
 .MuiInputBase-input {
   color: #000 !important;
+  -webkit-text-fill-color: #000 !important;
 }
 
 .dark-mode .MuiInputBase-input {
   color: #fff !important;
+  -webkit-text-fill-color: #fff !important;
 }
 
-/* TextArea Text */
+/* TextArea */
 
-.MuiOutlinedInput-input,
 .MuiInputBase-inputMultiline {
   color: #000 !important;
+  -webkit-text-fill-color: #000 !important;
 }
 
-.dark-mode .MuiOutlinedInput-input,
 .dark-mode .MuiInputBase-inputMultiline {
   color: #fff !important;
+  -webkit-text-fill-color: #fff !important;
 }
 
-/* Dark Mode Borders */
+/* Placeholder */
+
+::placeholder {
+  color: #777 !important;
+}
+
+.dark-mode ::placeholder {
+  color: #bbb !important;
+}
+
+/* Light Mode Input Box */
+
+.MuiOutlinedInput-root {
+  background: #fff !important;
+}
+
+/* Dark Mode Input Box */
+
+.dark-mode .MuiOutlinedInput-root {
+  background: rgba(255, 255, 255, 0.08) !important;
+}
+
+/* Borders */
 
 .dark-mode .MuiOutlinedInput-root fieldset {
   border-color: #fff !important;
 }
 
-/* Dark Mode TextBox Background */
-
-.dark-mode .MuiOutlinedInput-root {
-  background-color: rgba(255, 255, 255, 0.05);
+.dark-mode .Mui-focused fieldset {
+  border-color: #5000ca !important;
 }
 
-/* Light Mode TextBox Background */
-
-.MuiOutlinedInput-root {
-  background-color: #fff;
-}
+/* Form Layout */
 
 label {
   font-size: 1.2rem;
@@ -133,7 +164,7 @@ form {
   margin-bottom: 15px !important;
 }
 
-/* Mobile Responsive */
+/* Mobile */
 
 @media screen and (max-width: 768px) {
   .form-flex {
