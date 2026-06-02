@@ -1,186 +1,187 @@
 .contact_wrapper {
-  width: 100%;
+width: 100%;
 }
 
 .contact_wrapper svg {
-  font-size: 1em;
-  vertical-align: middle;
-  margin-right: 5px;
+font-size: 1em;
+vertical-align: middle;
+margin-right: 5px;
 }
 
 /* Contact Information */
 
 .contact-info {
-  margin: 20px 0;
+margin: 20px 0;
 }
 
-.contact-info p {
-  margin: 8px 0;
-  font-size: 1rem;
-  color: #000 !important;
+.contact-info p,
+.email-text {
+margin: 8px 0;
+font-size: 1rem;
+color: #000 !important;
+font-weight: 500;
 }
 
-.dark-mode .contact-info p {
-  color: #fff !important;
+.dark-mode .contact-info p,
+.dark-mode .email-text {
+color: #fff !important;
 }
 
 /* Resume Buttons */
 
 .resume-buttons {
-  display: flex;
-  gap: 15px;
-  margin-bottom: 25px;
-  flex-wrap: wrap;
+display: flex;
+gap: 15px;
+margin-bottom: 25px;
+flex-wrap: wrap;
 }
 
 .resume-buttons button {
-  font-weight: 600;
+font-weight: 600;
 }
 
 /* Contact Form */
 
 .contact-form {
-  padding-top: 20px;
+padding-top: 20px;
 }
 
 .contact-form button {
-  float: right;
-  background-color: white;
-  color: #050f0b;
+float: right;
+background-color: white;
+color: #050f0b;
 }
 
 .contact-form button:hover {
-  background-color: #5000ca;
-  color: white;
+background-color: #5000ca;
+color: white;
 }
 
 .contact-form fieldset {
-  border-radius: 5px;
+border-radius: 5px;
 }
 
 /* Labels */
 
 .MuiInputLabel-root {
-  color: #555 !important;
+color: #555 !important;
 }
 
 .dark-mode .MuiInputLabel-root {
-  color: #fff !important;
+color: #fff !important;
 }
 
 /* Input Text */
 
 input,
 textarea {
-  color: #000 !important;
-  -webkit-text-fill-color: #000 !important;
+color: #000 !important;
+-webkit-text-fill-color: #000 !important;
 }
 
 .dark-mode input,
 .dark-mode textarea {
-  color: #fff !important;
-  -webkit-text-fill-color: #fff !important;
+color: #fff !important;
+-webkit-text-fill-color: #fff !important;
 }
 
 /* Material UI Input Text */
 
 .MuiInputBase-input {
-  color: #000 !important;
-  -webkit-text-fill-color: #000 !important;
+color: #000 !important;
+-webkit-text-fill-color: #000 !important;
 }
 
 .dark-mode .MuiInputBase-input {
-  color: #fff !important;
-  -webkit-text-fill-color: #fff !important;
+color: #fff !important;
+-webkit-text-fill-color: #fff !important;
 }
 
-/* TextArea */
+/* Text Area */
 
 .MuiInputBase-inputMultiline {
-  color: #000 !important;
-  -webkit-text-fill-color: #000 !important;
+color: #000 !important;
+-webkit-text-fill-color: #000 !important;
 }
 
 .dark-mode .MuiInputBase-inputMultiline {
-  color: #fff !important;
-  -webkit-text-fill-color: #fff !important;
+color: #fff !important;
+-webkit-text-fill-color: #fff !important;
 }
 
 /* Placeholder */
 
 ::placeholder {
-  color: #777 !important;
+color: #777 !important;
 }
 
 .dark-mode ::placeholder {
-  color: #bbb !important;
+color: #bbb !important;
 }
 
-/* Light Mode Input Box */
+/* Input Background */
 
 .MuiOutlinedInput-root {
-  background: #fff !important;
+background: #fff !important;
 }
 
-/* Dark Mode Input Box */
-
 .dark-mode .MuiOutlinedInput-root {
-  background: rgba(255, 255, 255, 0.08) !important;
+background: rgba(255, 255, 255, 0.08) !important;
 }
 
 /* Borders */
 
 .dark-mode .MuiOutlinedInput-root fieldset {
-  border-color: #fff !important;
+border-color: #fff !important;
 }
 
 .dark-mode .Mui-focused fieldset {
-  border-color: #5000ca !important;
+border-color: #5000ca !important;
 }
 
-/* Form Layout */
+/* Layout */
 
 label {
-  font-size: 1.2rem;
-  font-family: "DomaineDispNar-Medium", sans-serif;
+font-size: 1.2rem;
+font-family: "DomaineDispNar-Medium", sans-serif;
 }
 
 .form-flex {
-  display: flex;
-  gap: 15px;
-  padding-bottom: 15px;
+display: flex;
+gap: 15px;
+padding-bottom: 15px;
 }
 
 .form-flex .MuiFormControl-root {
-  width: 100%;
+width: 100%;
 }
 
 form {
-  width: 100% !important;
+width: 100% !important;
 }
 
 .body-form {
-  width: 100% !important;
-  margin-bottom: 15px !important;
+width: 100% !important;
+margin-bottom: 15px !important;
 }
 
 /* Mobile */
 
 @media screen and (max-width: 768px) {
-  .form-flex {
-    flex-direction: column;
-  }
+.form-flex {
+flex-direction: column;
+}
 
-  .resume-buttons {
-    flex-direction: column;
-    width: 100%;
-  }
+.resume-buttons {
+flex-direction: column;
+width: 100%;
+}
 
-  .resume-buttons button {
-    width: 100%;
-  }
+.resume-buttons button {
+width: 100%;
+}
 
-  .contact-info p {
-    font-size: 0.95rem;
-  }
+.contact-info p {
+font-size: 0.95rem;
+}
 }
