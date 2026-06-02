@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/Harsha_Portfolio/static/css/main.1e655464.css",
-    "main.js": "/Harsha_Portfolio/static/js/main.b9eee785.js",
-    "static/js/453.b05d8aa5.chunk.js": "/Harsha_Portfolio/static/js/453.b05d8aa5.chunk.js",
-    "static/media/datasci_logo.png": "/Harsha_Portfolio/static/media/datasci_logo.62800460d784d6c39884.png",
-    "static/media/QRVoiceEducation.jpeg": "/Harsha_Portfolio/static/media/QRVoiceEducation.a6444a2dfe541d10ec7b.jpeg",
-    "static/media/EmoFace_AI.jpeg": "/Harsha_Portfolio/static/media/EmoFace_AI.dc8219f7bb89077230ac.jpeg",
-    "static/media/SmartLockTOTP.jpeg": "/Harsha_Portfolio/static/media/SmartLockTOTP.008233c99281057f7554.jpeg",
-    "static/media/VisuNav_AI.jpeg": "/Harsha_Portfolio/static/media/VisuNav_AI.a707c43df41e8ef6e59f.jpeg",
-    "static/media/BlinkVerfiy_AI.jpeg": "/Harsha_Portfolio/static/media/BlinkVerfiy_AI.40a0ff75e73d21ab6ad4.jpeg",
-    "static/media/QROTPVoiceHouse.jpeg": "/Harsha_Portfolio/static/media/QROTPVoiceHouse.cece68852e9c26f97f7f.jpeg",
-    "static/media/bg-light.png": "/Harsha_Portfolio/static/media/bg-light.bac0efb485244a522981.png",
-    "static/media/bg-dark.png": "/Harsha_Portfolio/static/media/bg-dark.f420c6b8458af72de935.png",
-    "static/media/AI_Fan.jpeg": "/Harsha_Portfolio/static/media/AI_Fan.9982c656458749d3b2e5.jpeg",
-    "static/media/Harsha.jpeg": "/Harsha_Portfolio/static/media/Harsha.db1c599214fd7bd87acc.jpeg",
-    "index.html": "/Harsha_Portfolio/index.html",
-    "main.1e655464.css.map": "/Harsha_Portfolio/static/css/main.1e655464.css.map",
-    "main.b9eee785.js.map": "/Harsha_Portfolio/static/js/main.b9eee785.js.map",
-    "453.b05d8aa5.chunk.js.map": "/Harsha_Portfolio/static/js/453.b05d8aa5.chunk.js.map"
+    "main.css": "/Harsha24/static/css/main.1e4f6436.css",
+    "main.js": "/Harsha24/static/js/main.4ac6a6a0.js",
+    "static/js/453.b05d8aa5.chunk.js": "/Harsha24/static/js/453.b05d8aa5.chunk.js",
+    "static/media/datasci_logo.png": "/Harsha24/static/media/datasci_logo.62800460d784d6c39884.png",
+    "static/media/QRVoiceEducation.jpeg": "/Harsha24/static/media/QRVoiceEducation.a6444a2dfe541d10ec7b.jpeg",
+    "static/media/EmoFace_AI.jpeg": "/Harsha24/static/media/EmoFace_AI.dc8219f7bb89077230ac.jpeg",
+    "static/media/SmartLockTOTP.jpeg": "/Harsha24/static/media/SmartLockTOTP.008233c99281057f7554.jpeg",
+    "static/media/VisuNav_AI.jpeg": "/Harsha24/static/media/VisuNav_AI.a707c43df41e8ef6e59f.jpeg",
+    "static/media/BlinkVerfiy_AI.jpeg": "/Harsha24/static/media/BlinkVerfiy_AI.40a0ff75e73d21ab6ad4.jpeg",
+    "static/media/QROTPVoiceHouse.jpeg": "/Harsha24/static/media/QROTPVoiceHouse.cece68852e9c26f97f7f.jpeg",
+    "static/media/bg-light.png": "/Harsha24/static/media/bg-light.bac0efb485244a522981.png",
+    "static/media/bg-dark.png": "/Harsha24/static/media/bg-dark.f420c6b8458af72de935.png",
+    "static/media/AI_Fan.jpeg": "/Harsha24/static/media/AI_Fan.9982c656458749d3b2e5.jpeg",
+    "static/media/Harsha.jpeg": "/Harsha24/static/media/Harsha.db1c599214fd7bd87acc.jpeg",
+    "index.html": "/Harsha24/index.html",
+    "main.1e4f6436.css.map": "/Harsha24/static/css/main.1e4f6436.css.map",
+    "main.4ac6a6a0.js.map": "/Harsha24/static/js/main.4ac6a6a0.js.map",
+    "453.b05d8aa5.chunk.js.map": "/Harsha24/static/js/453.b05d8aa5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1e655464.css",
-    "static/js/main.b9eee785.js"
+    "static/css/main.1e4f6436.css",
+    "static/js/main.4ac6a6a0.js"
   ]
 }
