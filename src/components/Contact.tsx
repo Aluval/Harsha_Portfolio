@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import "../assets/styles/Contact.scss";
 
 import Box from "@mui/material/Box";
@@ -8,143 +8,130 @@ import DownloadIcon from "@mui/icons-material/Download";
 import TextField from "@mui/material/TextField";
 
 function Contact() {
-  const [name, setName] = useState<string>("");
-  const [email, setEmail] = useState<string>("");
-  const [message, setMessage] = useState<string>("");
+const [result, setResult] = useState("");
 
-  const [nameError, setNameError] = useState<boolean>(false);
-  const [emailError, setEmailError] = useState<boolean>(false);
-  const [messageError, setMessageError] = useState<boolean>(false);
+const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+event.preventDefault();
 
-  const form = useRef(null);
+```
+setResult("Sending...");
 
-  const sendEmail = async (e: any) => {
-  e.preventDefault();
+const formData = new FormData(event.currentTarget);
 
-  setNameError(name === "");
-  setEmailError(email === "");
-  setMessageError(message === "");
+formData.append(
+  "access_key",
+  "0ab396ce-722f-4547-b612-08f1538e0c8e"
+);
 
-  if (!name || !email || !message) return;
-
-  const data = {
-    access_key: "0ab396ce-722f-4547-b612-08f1538e0c8e",
-    name: name,
-    email: email,
-    message: message,
-    subject: "New Portfolio Contact Message",
-  };
-
-  const response = await fetch("https://api.web3forms.com/submit", {
+const response = await fetch(
+  "https://api.web3forms.com/submit",
+  {
     method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      Accept: "application/json",
-    },
-    body: JSON.stringify(data),
-  });
-
-  const result = await response.json();
-
-  if (result.success) {
-    alert("Message Sent Successfully!");
-
-    setName("");
-    setEmail("");
-    setMessage("");
-  } else {
-    alert("Failed to send message.");
+    body: formData,
   }
+);
+
+const data = await response.json();
+
+if (data.success) {
+  setResult("✅ Message Sent Successfully!");
+  event.currentTarget.reset();
+} else {
+  setResult("❌ Failed to send message");
+  console.log(data);
+}
+```
+
 };
 
-  return (
-    <div id="contact">
-      <div className="items-container">
-        <div className="contact_wrapper">
-          <h1>Contact Me</h1>
+return ( <div id="contact"> <div className="items-container"> <div className="contact_wrapper">
 
-          <p>
-            Interested in AI, Data Science, Machine Learning, IoT or Web
-            Development projects?<br></br><br></br>     
+```
+      <h1>Contact Me</h1>
 
-            Let's connect and build something amazing.
-          </p>
+      <p>
+        Interested in AI, Data Science, Machine Learning,
+        IoT or Web Development projects?
+        <br />
+        <br />
+        Let's connect and build something amazing.
+      </p>
 
-          <div className="contact-info">
-            <p className="email-text">
-              📧 Email: sunrisesharsha467@gmail.com
-            </p>
-          </div>
-
-          <div className="resume-buttons">
-            <Button
-              variant="outlined"
-              startIcon={<DownloadIcon />}
-              href={`${process.env.PUBLIC_URL}/resume/Harsha_AI_Engineer_Resume.pdf`}
-              download
-            >
-              Download Resume
-            </Button>
-          </div>
-
-          <Box
-            ref={form}
-            component="form"
-            noValidate
-            autoComplete="off"
-            className="contact-form"
-          >
-            <div className="form-flex">
-              <TextField
-                required
-                label="Your Name"
-                placeholder="Enter your name"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-                error={nameError}
-                helperText={nameError ? "Please enter your name" : ""}
-              />
-
-              <TextField
-                required
-                label="Email / Phone"
-                placeholder="Enter your email or phone"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                error={emailError}
-                helperText={
-                  emailError
-                    ? "Please enter your email or phone number"
-                    : ""
-                }
-              />
-            </div>
-
-            <TextField
-              required
-              multiline
-              rows={8}
-              label="Message"
-              placeholder="Write your message..."
-              className="body-form"
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-              error={messageError}
-              helperText={messageError ? "Please enter your message" : ""}
-            />
-
-            <Button
-              variant="contained"
-              endIcon={<SendIcon />}
-              onClick={sendEmail}
-            >
-              Send Message
-            </Button>
-          </Box>
-        </div>
+      <div className="contact-info">
+        <p className="email-text">
+          📧 Email: sunrisesharsha467@gmail.com
+        </p>
       </div>
+
+      <div className="resume-buttons">
+        <Button
+          variant="outlined"
+          startIcon={<DownloadIcon />}
+          href={`${process.env.PUBLIC_URL}/resume/Harsha_AI_Engineer_Resume.pdf`}
+          download
+        >
+          Download Resume
+        </Button>
+      </div>
+
+      <Box
+        component="form"
+        onSubmit={onSubmit}
+        noValidate
+        autoComplete="off"
+        className="contact-form"
+      >
+        <div className="form-flex">
+
+          <TextField
+            name="name"
+            required
+            fullWidth
+            label="Your Name"
+            placeholder="Enter your name"
+          />
+
+          <TextField
+            name="email"
+            required
+            fullWidth
+            label="Email / Phone"
+            placeholder="Enter your email or phone"
+          />
+
+        </div>
+
+        <TextField
+          name="message"
+          required
+          fullWidth
+          multiline
+          rows={8}
+          label="Message"
+          placeholder="Write your message..."
+          className="body-form"
+        />
+
+        <Button
+          type="submit"
+          variant="contained"
+          endIcon={<SendIcon />}
+        >
+          Send Message
+        </Button>
+
+        <p className="form-status">
+          {result}
+        </p>
+
+      </Box>
+
     </div>
-  );
+  </div>
+</div>
+```
+
+);
 }
 
 export default Contact;
