@@ -71,7 +71,9 @@ function Contact() {
           </p>
 
           <div className="contact-info">
-            <p>📧 Email: sunrisesharsha467@gmail.com</p>
+            <p className="email-text">
+              📧 Email: sunrisesharsha467@gmail.com
+            </p>
           </div>
 
           <div className="resume-buttons">
