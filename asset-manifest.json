@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Harsha_Portfolio/static/css/main.633dd123.css",
-    "main.js": "/Harsha_Portfolio/static/js/main.5541ea0f.js",
+    "main.js": "/Harsha_Portfolio/static/js/main.f09c3446.js",
     "static/js/453.b05d8aa5.chunk.js": "/Harsha_Portfolio/static/js/453.b05d8aa5.chunk.js",
     "static/media/datasci_logo.png": "/Harsha_Portfolio/static/media/datasci_logo.62800460d784d6c39884.png",
     "static/media/QRVoiceEducation.jpeg": "/Harsha_Portfolio/static/media/QRVoiceEducation.a6444a2dfe541d10ec7b.jpeg",
@@ -16,11 +16,11 @@
     "static/media/Harsha.jpeg": "/Harsha_Portfolio/static/media/Harsha.db1c599214fd7bd87acc.jpeg",
     "index.html": "/Harsha_Portfolio/index.html",
     "main.633dd123.css.map": "/Harsha_Portfolio/static/css/main.633dd123.css.map",
-    "main.5541ea0f.js.map": "/Harsha_Portfolio/static/js/main.5541ea0f.js.map",
+    "main.f09c3446.js.map": "/Harsha_Portfolio/static/js/main.f09c3446.js.map",
     "453.b05d8aa5.chunk.js.map": "/Harsha_Portfolio/static/js/453.b05d8aa5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.633dd123.css",
-    "static/js/main.5541ea0f.js"
+    "static/js/main.f09c3446.js"
   ]
 }
